@@ -82,7 +82,7 @@
                         <p class="status-text">Unpaid</p>
                     </div>
 
-                    <button class="payment-link">Make Payment</button>
+                    <a href="https://www.sasktel.com"><button id="sasktel" class="payment-link">Make Payment</button></a>
                 </div>
 
 
@@ -94,7 +94,10 @@
     <script>
         document.addEventListener("click", function (event) {
             const button = event.target.closest(".payment-link");
+            
             if (!button) return; // clicked something else
+            if (button.id === "sasktel") return;
+
 
             const row = button.closest(".checklist-row");
             if (!row) return; // ignore payment-link buttons outside rows
