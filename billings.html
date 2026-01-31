@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Crown Connect Billings</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <aside class="sidebar">
+        <div>
+            <h2>Dashboard</h2>
+            <a href="#">View Billings</a>
+            <a href="update.html">Update your data</a>
+        </div>
+        <div>
+            <a href="login.html">Logout</a>
+        </div>
+    </aside>
+
+    <div class="main">
+        <header class="top-nav">
+            <a class="logo" href="index.html">
+                <img src="images/Logo.png" id="Logo">
+            </a>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+            </nav>
+        </header>
+
+        <main class="content">
+            <section class="checklist">
+                <h2>Billings of January 2026</h2>
+
+                <div class="checklist-row">
+                    <div class="check-item">
+                        <input type="checkbox" checked>
+                        <span>SaskEnergy</span>
+                    </div>
+                    <div class="check-info" style="background-color: #018421;">
+                        <p>Paid</p>
+                    </div>
+                    <a>
+                        <button class="payment-link">Make Payment</button>
+                    </a>
+                </div>
+
+                <div class="checklist-row">
+                    <div class="check-item">
+                        <input type="checkbox">
+                        <span>SaskPower</span>
+                    </div>
+                    <div class="check-info" style="background-color: #1c2053;">
+                        <p>Processing payment</p>
+                    </div>
+                    <a>
+                        <button class="payment-link">Make Payment</button>
+                    </a>
+                </div>
+
+                <div class="checklist-row">
+                    <div class="check-item">
+                        <input type="checkbox" checked>
+                        <span>SGI</span>
+                    </div>
+                    <div class="check-info" style="background-color: #018421;">
+                        <p>Paid</p>
+                    </div>
+                    <a>
+                        <button class="payment-link">Make Payment</button>
+                    </a>
+                </div>
+
+                <div class="checklist-row">
+                    <div class="check-item">
+                        <input type="checkbox">
+                        <span>SaskTel</span>
+                    </div>
+                    <div class="check-info" style="background-color: #cc0000;">
+                        <p>Overdue</p>
+                    </div>
+                    <a>
+                        <button class="payment-link">Make Payment</button>
+                    </a>
+                </div>
+
+            </section>
+
+
+        </main>
+    </div>
+    <script type="module" src="/src/main.jsx"></script>
+</body>
+
+</html>

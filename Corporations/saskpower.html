@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Crown Connect -SaskPower</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <aside class="sidebar">
+        <div>
+            <h2>Dashboard</h2>
+            <a href="../billings.html">View Billings</a>
+            <a href="../update.html">Update your data</a>
+        </div>
+        <div>
+            <a href="../login.html">Logout</a>
+        </div>
+    </aside>
+
+    <div class="main">
+        <header class="top-nav">
+            <a class="logo" href="../index.html">
+                <img src="../images/Logo.png" id="Logo">
+            </a>
+            <nav class="nav-links">
+                <a href="../index.html">Home</a>
+            </nav>
+        </header>
+
+        <main class="content">
+            <section class="info-section">
+                <h2>Information within the SaskPower Database</h2>
+
+                <div class="info-row">
+                    <label>Name</label>
+                    <div class="info-value">John Doe</div>
+                </div>
+
+                <div class="info-row">
+                    <label>Email</label>
+                    <div class="info-value">john.doe@example.com</div>
+                </div>
+
+                <div class="info-row">
+                    <label>Phone</label>
+                    <div class="info-value">(555) 123‑4567</div>
+                </div>
+
+                <div class="info-row">
+                    <label>Address</label>
+                    <div class="info-value">123 Main Street, Regina, SK</div>
+                </div>
+
+                <div class="info-row">
+                    <label>Synced with our data</label>
+                    <div class="info-value status-active">Synced</div>
+                </div>
+
+                <a href="../update.html">
+                    <button class="redirect-btn">
+                        In order to sync the data to be accurate, please update your information here
+                    </button>
+                </a>
+            </section>
+
+        </main>
+    </div>
+    <script type="module" src="/src/main.jsx"></script>
+</body>
+
+</html>

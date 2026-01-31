@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Crown Connect</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="main">
+        <header class="top-nav">
+            <a class="logo">
+                <img src="images/Logo.png" id="Logo">
+            </a>
+            <nav class="Login-title">
+                <h1>Login</h1>
+            </nav>
+        </header>
+
+        <main class="content">
+            <section class="login">
+                <form class="auth-form" action="index.html" method="post">
+
+                    <div class="form-input-grid">
+
+                        <label for="uname" class="label">Username:</label>
+                        <input type="text" id="uname" name="uname" class="label-input"/>
+
+                        <label for="password" class="label">Password: </label> 
+                        <input type="password" id="pwd" name="pwd" class="label-input"/>
+
+                    </div>
+                    <div>
+                        <input type="submit" class="login-btn"/>
+                    </div>
+                </form>
+            </section>
+
+        </main>
+
+    </div>
+    <script type="module" src="/src/main.jsx"></script>
+</body>
+
+</html>
