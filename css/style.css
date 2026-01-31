@@ -17,7 +17,7 @@ body {
 
 /* Sidebar */
 .sidebar {
-    width: 220px;
+    min-width: 220px;
     background: #224222;
     color: #fff;
     padding: 20px;
@@ -57,7 +57,7 @@ body {
 
 /* Top navigation header */
 .top-nav {
-    height: 100px;
+    min-height: 100px;
     background: #ffffff;
     border-bottom: 1px solid #d8e2ec;
     display: flex;
