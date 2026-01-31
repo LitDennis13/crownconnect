@@ -10,7 +10,7 @@
     <div>
       <h2>Dashboard</h2>
       <a href="billings.html">View Billings</a>
-      <a href="#">Update your data</a>
+      <a href="update.html">Update your data</a>
       <a href="#">Settings</a>
     </div>
     <div>
@@ -20,33 +20,48 @@
 
   <div class="main">
     <header class="top-nav">
-      <div class="logo">Crown Connect</div>
+      <a class="logo" href="index.html">
+        <img src="images/Logo.png" id="Logo">
+      </a>
       <nav class="nav-links">
         <a href="#">Home</a>
-        <a href="#">Profile</a>
       </nav>
     </header>
 
     <main class="content">
       <section class="card-grid">
-        <div class="card">
-          <h3>SaskEnergy</h3>
-          <p>View your data</p>
-        </div>
-        <div class="card">
-          <h3>SaskPower</h3>
-          <p>View your data</p>
-        </div>
-        <div class="card">
-          <h3>SGI</h3>
-          <p>View your data</p>
-        </div>
-        <div class="card">
-          <h3>SaskTel</h3>
-          <p>View your data</p>
-        </div>
+        <a class="card" href="Corporations/saskenergy.html">
+          <button class="corp-btn">
+            <h3>SaskEnergy</h3>
+            <p>View your data</p>
+          </button>
+          <img src="images/SaskEnergy.png" id="SaskEnergy">
+        </a>
+        <a class="card" href="Corporations/saskpower.html">
+          <button class="corp-btn">
+            <h3>SaskPower</h3>
+            <p>View your data</p>
+          </button>
+          <img src="images/SaskPower.png" id="SaskPower">
+        </a>
+        <a class="card" href="Corporations/sgi.html">
+          <button class="corp-btn">
+            <h3>SGI</h3>
+            <p>View your data</p>
+          </button>
+          <img src="images/SGI.png" id="SGI">
+        </a>
+        <a class="card" href="Corporations/sasktel.html">
+          <button class="corp-btn">
+            <h3>SaskTel</h3>
+            <p>View your data</p>
+          </button>
+          <img src="images/SaskTel.png" id="SaskTel">
+        </a>
       </section>
+
     </main>
+    
   </div>
   <script type="module" src="/src/main.jsx"></script>
 </body>
