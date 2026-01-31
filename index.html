@@ -1,13 +1,54 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>crownconnect</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <title>Crown Connect</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <aside class="sidebar">
+    <div>
+      <h2>Dashboard</h2>
+      <a href="billings.html">View Billings</a>
+      <a href="#">Update your data</a>
+      <a href="#">Settings</a>
+    </div>
+    <div>
+      <a href="#">Logout</a>
+    </div>
+  </aside>
+
+  <div class="main">
+    <header class="top-nav">
+      <div class="logo">Crown Connect</div>
+      <nav class="nav-links">
+        <a href="#">Home</a>
+        <a href="#">Profile</a>
+      </nav>
+    </header>
+
+    <main class="content">
+      <section class="card-grid">
+        <div class="card">
+          <h3>SaskEnergy</h3>
+          <p>View your data</p>
+        </div>
+        <div class="card">
+          <h3>SaskPower</h3>
+          <p>View your data</p>
+        </div>
+        <div class="card">
+          <h3>SGI</h3>
+          <p>View your data</p>
+        </div>
+        <div class="card">
+          <h3>SaskTel</h3>
+          <p>View your data</p>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
 </html>
+
