@@ -48,7 +48,7 @@
 
                 <div class="checklist-row">
                     <div class="check-item">
-                        <input type="checkbox">
+                        <input type="checkbox" checked>
                         <span>SaskPower</span>
                     </div>
                     <div class="check-info" style="background-color: #1c2053;">
@@ -74,23 +74,50 @@
 
                 <div class="checklist-row">
                     <div class="check-item">
-                        <input type="checkbox">
+                        <input type="checkbox" class="bill-checkbox">
                         <span>SaskTel</span>
                     </div>
-                    <div class="check-info" style="background-color: #cc0000;">
-                        <p>Overdue</p>
+
+                    <div class="check-info" style="background-color: #99a8bd;">
+                        <p class="status-text">Unpaid</p>
                     </div>
-                    <a>
-                        <button class="payment-link">Make Payment</button>
-                    </a>
+
+                    <button class="payment-link">Make Payment</button>
                 </div>
+
 
             </section>
 
 
         </main>
     </div>
-    <script type="module" src="/src/main.jsx"></script>
+    <script>
+        document.addEventListener("click", function (event) {
+            const button = event.target.closest(".payment-link");
+            if (!button) return; // clicked something else
+
+            const row = button.closest(".checklist-row");
+            if (!row) return; // ignore payment-link buttons outside rows
+
+            const checkbox = row.querySelector('input[type="checkbox"]');
+            const statusBox = row.querySelector(".check-info");
+            const statusText = statusBox ? statusBox.querySelector("p") : null;
+
+            if (checkbox) {
+                checkbox.checked = true;
+            }
+
+            if (statusText) {
+                statusText.textContent = "Processing payment";
+            }
+
+            if (statusBox) {
+                statusBox.style.backgroundColor = "#1c2053"; // processing colour
+            }
+
+        });
+
+    </script>
 </body>
 
 </html>
